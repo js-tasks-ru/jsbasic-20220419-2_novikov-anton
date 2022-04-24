@@ -1,16 +1,9 @@
-/**
- * Эту функцию трогать не нужно
- */
 function print(text) {
   console.log(text);
 }
 
-/**
- * Эту функцию нужно поменять так,
- * чтобы функция sayHello работала корректно
- */
 function isValid(name) {
-  // ваш код...
+  return Boolean(name) && name.length > 3 && !name.includes(' '); 
 }
 
 function sayHello() {
